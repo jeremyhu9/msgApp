@@ -6,20 +6,19 @@
     </div>
 
     <center><div class="login-form">
-      <form>
+      <form action="/login" method="post">
         <div class="form-group">
-            <label for="exampleInputEmail1">Enter Username</label>
-            <input type="text" class="form-control username" id="exampleInputEmail1" placeholder="Username">
+            <label>Enter Username</label>
+            <input type="text" class="form-control username" name="username" placeholder="Username">
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Enter Password</label>
-            <input type="text" class="form-control password" id="exampleInputPassword1" placeholder="Password">
+            <label>Enter Password</label>
+            <input type="text" class="form-control password" name="password" placeholder="Password">
           </div>
+        <div class="login-submit">
+          <input class="btn btn-primary" type="submit" value="Submit">
+        </div>
       </form>
-      
-      <div class="login-submit">
-        <input class="btn btn-primary" type="submit" value="Submit">
-      </div>
 
       <div class="options">
         <a href="#" ng-click="routeTo('signup')">Sign up</a>

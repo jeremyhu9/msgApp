@@ -2,19 +2,19 @@
   <center><h2>Sign Up</h2></center>
 
   <center><div class="login-form">
-    <form ng-submit="addUser()">
+    <form action="/signup" method="post">
       <div class="form-group">
-          <label>Enter email address</label>
-          <input type="text" class="form-control username" placeholder="Username" ng-model="user.email">
+          <label>Enter username</label>
+          <input type="text" class="form-control username" name="username" placeholder="Username">
         </div>
         <div class="form-group">
           <label>Enter Password</label>
-          <input type="text" class="form-control password" placeholder="Password" ng-model="user.password">
+          <input type="password" class="form-control password" name="password" placeholder="password">
         </div>
       
       <div class="login-submit">
         <input class="btn btn-primary" type="submit" value="Submit">
       </div>
     </form>
-    
+  
 </div>
